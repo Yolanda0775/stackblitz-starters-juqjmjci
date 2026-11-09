@@ -1,0 +1,373 @@
+import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+[hidden] {
+    display: none;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+/*-------------------------------------------------- [ l o g i n ] --------------------------------------------------*/
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #04162a;
+}
+
+.caixa-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    padding: 30px 0;
+}
+
+/*-------------------- [ C a r d ] -------------------- */
+
+#nome-login {
+    font-size: 45px;
+    font-weight: 500;
+    color: #00c8e2;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card-login {
+    width: 400px;
+    max-width: 90%;
+    padding: 40px 35px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    border: solid 2px #e2e8f0;
+    box-shadow: 0 6px 0 #e2e8f0;
+}
+
+#titulo-login {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #121F2D;
+    letter-spacing: -0.5px;
+}
+
+#subtitulo-login {
+    margin-top: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #121f2da2;
+    letter-spacing: -0.5px;
+}
+
+/*-------------------- [ F o r m u l á r i o ] -------------------- */
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.campo-login,
+#formulario input {
+    height: 48px;
+    width: 100%;
+    padding: 0 18px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    border: solid 2px #e2e8f0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #121F2D;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.campo-login::placeholder,
+#formulario input::placeholder {
+    color: #121f2d70;
+}
+
+.campo-login:focus,
+#formulario input:focus {
+    outline: none;
+    background-color: #ffffff;
+    border: solid 2px #1276e1ea;
+}
+
+#botao-login,
+#botao-salvar {
+    height: 50px;
+    border-radius: 60px;
+    background-color: #1276e1ea;
+    border: 1px solid #000000b2;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.5px;
+    color: #000000b2;
+    text-align: center;
+    line-height: 50px;
+    transition: background-color 0.3s ease;
+}
+
+#botao-login {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#botao-salvar {
+    width: 230px;
+}
+
+#botao-login:hover,
+#botao-salvar:hover {
+    background-color: #2dc2d5;
+    cursor: pointer;
+}
+
+#mensagem-login,
+#mensagem {
+    min-height: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.erro {
+    color: #d42a2ad9;
+}
+
+.sucesso {
+    color: #006402f3;
+}
+
+#troca-login {
+    margin-top: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #121f2da2;
+    text-align: center;
+}
+
+#link-troca-login {
+    font-weight: 700;
+    color: #1276e1;
+    transition: color 0.3s ease;
+}
+
+#link-troca-login:hover {
+    color: #2dc2d5;
+    cursor: pointer;
+}
+
+/*-------------------------------------------------- [ l o j a ] --------------------------------------------------*/
+
+main {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px 80px 20px;
+}
+
+/*-------------------- [ H e a d e r ] -------------------- */
+
+main h1 {
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: #121F2D;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.topo h1 {
+    margin-top: 0px;
+    text-align: left;
+}
+
+#botao-cancelar,
+.sair {
+    height: 48px;
+    width: 120px;
+    background-color: transparent;
+    border-radius: 60px;
+    border: solid 2px #e2e8f0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #121f2dc1;
+    text-align: center;
+    line-height: 44px;
+    transition: border 0.3s ease, color 0.3s ease;
+}
+
+.sair {
+    height: 42px;
+    width: 90px;
+    line-height: 38px;
+}
+
+#botao-cancelar:hover,
+.sair:hover {
+    border: solid 2px #1276e1ea;
+    color: #1276e1ea;
+    cursor: pointer;
+}
+
+/*-------------------- [ F o r m u l á r i o ] -------------------- */
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    border: solid 2px #e2e8f0;
+    box-shadow: 0 6px 0 #e2e8f0;
+}
+
+#titulo-form {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: #121F2D;
+    letter-spacing: -0.5px;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+/*-------------------- [ P r o d u t o s ] -------------------- */
+
+main > h2 {
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: #121F2D;
+    letter-spacing: -0.5px;
+}
+
+#lista {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #121f2da2;
+}
+
+#lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 25px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    border: solid 2px #e2e8f0;
+    box-shadow: 0 4px 0 #e2e8f0;
+    cursor: default;
+    transition: all .2s ;
+}
+
+#lista li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 0 #e2e8f0;
+}
+
+#lista strong {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #121F2D;
+    letter-spacing: -0.5px;
+}
+
+.preco {
+    margin-top: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #121f2da2;
+    letter-spacing: -0.5px;
+}
+
+.editar,
+.apagar {
+    height: 38px;
+    width: 85px;
+    border-radius: 60px;
+    border: solid 2px #e2e8f0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 34px;
+    transition: all .2s ;
+}
+
+.editar {
+    background-color: #cee8ff;
+    color: #003064f3;
+}
+
+.apagar {
+    background-color: #ffe2e2;
+    color: #d42a2ad9;
+}
+
+.editar:hover,
+.apagar:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+/*-------------------- [ C e l u l a r ] -------------------- */
+
+@media (max-width: 500px) {
+    #lista li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-login {
+        padding: 30px 22px;
+    }
+}

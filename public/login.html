@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar - Minha Loja</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login">
+    <div class="caixa-login">
+      <h1 id="nome-login">Minha Loja</h1>
+
+      <div class="card-login">
+        <h2 id="titulo-login">Entrar</h2>
+        <p id="subtitulo-login">Acesse sua conta para gerenciar os produtos</p>
+
+        <form id="form-login">
+          <input type="text" id="campo-nome-login" class="campo-login" placeholder="Seu nome" autocomplete="name" hidden>
+          <input type="email" id="campo-email-login" class="campo-login" placeholder="E-mail" autocomplete="email" required>
+          <input type="password" id="campo-senha-login" class="campo-login" placeholder="Senha" autocomplete="current-password" required>
+          <button type="submit" id="botao-login">Entrar</button>
+          <p id="mensagem-login"></p>
+        </form>
+
+        <p id="troca-login">
+          <span id="texto-troca-login">Não tem conta?</span>
+          <span id="link-troca-login" role="button" tabindex="0">Criar conta</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
